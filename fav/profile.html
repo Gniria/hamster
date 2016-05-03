@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Java Web 开发 － 马连博</title>
+</head>
+<style>
+.content {
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+  width: 800px;
+  height: 100%;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  height:102px;
+  border-bottom: 1px solid #aaa;
+}
+
+.header > .name-block {
+  float: left;
+  background-color: #eee;
+}
+
+.header > .basic-info-block {
+  float: left;
+  width: 550px;
+  height: 100px;
+  padding-top: 20px;
+}
+
+.header > .basic-info-block > .cell {
+  float: left;
+  width: 42%;
+  line-height: 23px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.left-section {
+  float: left;
+  width: 249px;
+  border-right: 1px solid #aaa;
+}
+
+.edu, .skills, .experience, .judge, .expect {
+  float: left;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.exp-row {
+  float: left;
+  height: auto;
+  text-align: left;
+}
+
+.exp-row {
+  padding-left: 20px;
+}
+
+.exp-row > ul > li {
+  margin-top: 3px;
+  padding-top: 3px;
+  border-top: 1px solid #ccc;
+  height: 70px;
+}
+
+li > .title {
+  display: block;
+  line-height: 23px;
+}
+
+li > .keywords, .desc {
+  display: block;
+  color: #666;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+.left-span {
+  float: left;
+  width: 249px;
+  line-height: 23px;
+}
+
+.right-section {
+  float: left;
+  width: 550px;
+  height: auto;
+}
+
+.ul-list {
+  margin: 0;
+  text-align: left;
+  line-height: 23px;
+  font-size: 15px;
+}
+
+
+
+</style>
+<body>
+  <div class="content">
+    <div class="header">
+      <div class="name-block left-section">
+        <h2>马连博</h2>
+        <h4>Java Web 开发</h4>
+      </div>
+      <div class="basic-info-block">
+        <span class="cell">(+86)152 5887 3861</span>
+        <span class="cell">malianbo@163.com</span>
+        <span class="cell">籍贯：河南</span>
+        <span class="cell">年龄：26岁</span>
+        <span class="cell" style="width: 100%; padding-top: 5px;">个人主页:&nbsp; <a href="https://gniria.github.io" target="_blank">https://gniria.github.io</a></span>
+      </div>
+    </div>
+
+    <div class="edu">
+      <div class="left-section">
+        <span class="left-span">教育经历</span>
+        <span class="left-span date-span">2010.07 - 2012.02</span>
+      </div>
+      <div class="right-section">
+        <div style="text-align: left; padding-left: 20px; padding-top: 14px;">
+        北京，青鸟计算机培训，Java Web方向
+        </div>
+      </div>
+    </div>
+
+    <div class="skills">
+      <div class="left-section" style="height: 200px;">
+        <span class="left-span">专业技能</span>
+      </div>
+      <div class="right-section">
+        <ul class="ul-list">
+          <li>熟练掌握JAVA语言特性，了解JVM机制</li>
+          <li>熟练使用Spring、Hibernate/Mybatis进行Web开发，了解Servlet规范及实现(Tomcat)</li>
+          <li>熟练使用Javascript及常用UI库，熟悉H5、CSS3</li>
+          <li>熟练使用Mysql及性能调优</li>
+          <li>熟练使用svn、git等，熟悉Maven生态</li>
+          <li>熟悉网络分层及常用协议，熟悉socket</li>
+          <li>熟悉Linux操作，了解python、nodejs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience">
+      <div class="left-section">
+        <span class="left-span">工作经历</span>
+        <span class="left-span date-span" style="height: 122px;">2014.12 - 2016.04</span>
+        <span class="left-span date-span" style="height: 276px;">2013.08 - 2014.10</span>
+        <span class="left-span date-span" style="height: 122px;">2012.02 - 2013.07</span>
+      </div>
+      <div class="right-section">
+        <div class="exp-row" style="margin-top: 23px;">
+          <span>浙江小虫科技有限公司</span>
+          <ul>
+            <li>
+              <span class="title">运营管理平台（负责）</span>
+              <span class="keywords">Spring MVC, Hibernate, Angular, Bootstrap, MySQL</span>
+              <span class="desc">负责前后端技术架构和大部分业务模块的开发</span>
+            </li>
+          </ul>
+        </div>
+        <div class="exp-row">
+          <span>北京艺正扬科技有限公司</span>
+          <ul>
+            <li>
+              <span class="title">气象探测监控平台移动App（负责）</span>
+              <span class="keywords">Sencha Touch, PhoneGap, SpringMVC, Oracle</span>
+              <span class="desc">负责移动端及后端接口</span>
+            </li>
+            <li>
+              <span class="title">气象局某部门文档管理系统（参与）</span>
+              <span class="keywords">Spring ACL, Lucene, Oracle</span>
+              <span class="desc">实现文档访问控制和全文检索</span>
+            </li>
+            <li>
+              <span class="title">中海油内部业务系统(参与)</span>
+              <span class="keywords">SpringMVC, jquery-ui, Oracle</span>
+              <span class="desc">项目基于Alfresco，实现了业务单据填报模块</span>
+            </li>
+          </ul>
+        </div>
+        <div class="exp-row">
+          <span>北京和展科技有限公司</span>
+          <ul>
+            <li>
+              <span class="title">美容美发连锁管理系统（参与）</span>
+              <span class="keywords">Spring MVC, Hibernate, Flex, SQL Server</span>
+              <span class="desc">参与大部分模块的前后端实现与维护，包括诸如人事、库存、绩效、收银、报表等</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="judge">
+      <div class="left-section" style="height: 165px;">
+        <span class="left-span">自我评价</span>
+      </div>
+      <div class="right-section">
+        <ul class="ul-list">
+          <li>热心于用编程解决实际问题，负责的必定尽力做好，不留遗憾</li>
+          <li>喜欢研究源码，关注理念和原理</li>
+          <li>不局限于开发，喜欢并关注用户体验、产品、UI设计、运维等上下游</li>
+          <li>阅读广泛，各种问题、场景通常都会有解决方案，但实践不足</li>
+          <li>具备英文读写能力，推崇google、github、stackoverflow</li>
+          <li>性格偏内向，集体活动不算活跃，但喜欢技术和业务上的探讨</li>
+          <li>喜欢读书、骑行，也喜欢电子游戏（主要手游）</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="expect">
+      <div class="left-section" style="height: 75px;">
+        <span class="left-span">个人期望</span>
+      </div>
+      <div class="right-section">
+        <ul class="ul-list">
+          <li>技术很迷人，期望成为全栈技术专家</li>
+          <li>期望工作环境有较浓的技术氛围，不介意加班</li>
+          <li>待遇面议，希望劳有所得，环境好可适当让步</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
