@@ -71,12 +71,13 @@
 li > .title {
   display: block;
   line-height: 23px;
+  font-size: 14px;
 }
 
 li > .keywords, .desc {
   display: block;
   color: #666;
-  font-size: 13px;
+  font-size: 12px;
   padding: 5px 0;
 }
 
@@ -96,16 +97,27 @@ li > .keywords, .desc {
   margin: 0;
   text-align: left;
   line-height: 23px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
+a {
+  text-decoration: none;
+}
 
+.section-title {
+  font-weight: bold;
+  color: rgb(31,75,113);
+}
+
+li > .title {
+  color: rgb(80,80,80);
+}
 
 </style>
 <body>
   <div class="content">
     <div class="header">
-      <div class="name-block left-section">
+      <div class="name-block left-section" style="border: none;">
         <h2>马连博</h2>
         <h4>Java Web 开发</h4>
       </div>
@@ -120,11 +132,11 @@ li > .keywords, .desc {
 
     <div class="edu">
       <div class="left-section">
-        <span class="left-span">教育经历</span>
-        <span class="left-span date-span">2010.07 - 2012.02</span>
+        <span class="left-span section-title">教育经历</span>
+        <span class="left-span date-span" style="margin-top: 5px;">2010.07 - 2012.02</span>
       </div>
       <div class="right-section">
-        <div style="text-align: left; padding-left: 20px; padding-top: 14px;">
+        <div style="text-align: left; padding-left: 20px; padding-top: 29px;">
         北京，青鸟计算机培训，Java Web方向
         </div>
       </div>
@@ -132,7 +144,7 @@ li > .keywords, .desc {
 
     <div class="skills">
       <div class="left-section" style="height: 200px;">
-        <span class="left-span">专业技能</span>
+        <span class="left-span section-title">专业技能</span>
       </div>
       <div class="right-section">
         <ul class="ul-list">
@@ -149,7 +161,7 @@ li > .keywords, .desc {
 
     <div class="experience">
       <div class="left-section">
-        <span class="left-span">工作经历</span>
+        <span class="left-span section-title">工作经历</span>
         <span class="left-span date-span" style="height: 122px;">2014.12 - 2016.04</span>
         <span class="left-span date-span" style="height: 276px;">2013.08 - 2014.10</span>
         <span class="left-span date-span" style="height: 122px;">2012.02 - 2013.07</span>
@@ -200,7 +212,7 @@ li > .keywords, .desc {
 
     <div class="judge">
       <div class="left-section" style="height: 165px;">
-        <span class="left-span">自我评价</span>
+        <span class="left-span section-title">自我评价</span>
       </div>
       <div class="right-section">
         <ul class="ul-list">
@@ -217,7 +229,7 @@ li > .keywords, .desc {
 
     <div class="expect">
       <div class="left-section" style="height: 75px;">
-        <span class="left-span">个人期望</span>
+        <span class="left-span section-title">个人期望</span>
       </div>
       <div class="right-section">
         <ul class="ul-list">
