@@ -65,7 +65,7 @@
   margin-top: 3px;
   padding-top: 3px;
   border-top: 1px solid #ccc;
-  height: 70px;
+  height: auto;
 }
 
 li > .title {
@@ -78,6 +78,7 @@ li > .keywords, .desc {
   display: block;
   color: #666;
   font-size: 12px;
+  line-height: 18px;
   padding: 5px 0;
 }
 
@@ -111,6 +112,12 @@ a {
 
 li > .title {
   color: rgb(80,80,80);
+}
+
+.keywords:before {
+  content: 'keywords：';
+  font-weight: bold;
+  font-style: italic;
 }
 
 </style>
@@ -148,7 +155,7 @@ li > .title {
       </div>
       <div class="right-section">
         <ul class="ul-list">
-          <li>熟练掌握JAVA语言特性，了解JVM机制</li>
+          <li>熟练掌握JAVA语言特性及设计模式，了解JVM机制</li>
           <li>熟练使用Spring、Hibernate/Mybatis进行Web开发，了解Servlet规范及实现(Tomcat)</li>
           <li>熟练使用Javascript及常用UI库，熟悉H5、CSS3</li>
           <li>熟练使用Mysql及性能调优</li>
@@ -162,9 +169,9 @@ li > .title {
     <div class="experience">
       <div class="left-section">
         <span class="left-span section-title">工作经历</span>
-        <span class="left-span date-span" style="height: 122px;">2014.12 - 2016.04</span>
-        <span class="left-span date-span" style="height: 276px;">2013.08 - 2014.10</span>
-        <span class="left-span date-span" style="height: 122px;">2012.02 - 2013.07</span>
+        <span class="left-span date-span" style="height: 239px;">2014.12 - 2016.05</span>
+        <span class="left-span date-span" style="height: 501px;">2013.08 - 2014.10</span>
+        <span class="left-span date-span" style="height: 165px;">2012.02 - 2013.07</span>
       </div>
       <div class="right-section">
         <div class="exp-row" style="margin-top: 23px;">
@@ -173,7 +180,12 @@ li > .title {
             <li>
               <span class="title">运营管理平台（负责）</span>
               <span class="keywords">Spring MVC, Hibernate, Angular, Bootstrap, MySQL</span>
-              <span class="desc">负责前后端技术架构和大部分业务模块的开发</span>
+              <span class="desc">
+                负责前后端技术架构和大部分业务模块的开发，项目实现了对学校、公众号、应用、代理商、内部运营人员在内的数据和流程的管理；<br>
+                这是我第一次架构项目，走了一些弯路：<br>
+                1. 前端技术选择，最初采用DHTMLX，闭源且重度封装，后来替换成了更开放的Angular+Bootstrap;<br>
+                2. 最初设计时，对公众号的开户认证流程理解不够深入，没有直接作为工作流实现，到二期时推翻重来工作量大，于是自己实现了简单版的工作流框架；
+              </span>
             </li>
           </ul>
         </div>
@@ -183,17 +195,29 @@ li > .title {
             <li>
               <span class="title">气象探测监控平台移动App（负责）</span>
               <span class="keywords">Sencha Touch, PhoneGap, SpringMVC, Oracle</span>
-              <span class="desc">负责移动端及后端接口</span>
+              <span class="desc">
+                负责移动端及后端接口，项目实现了基于瓦片地图的10种气象设备监控、故障／维修单据快速填报等功能；App使用H5框架Sencha Touch实现，可直接打包到iOS、Android平台。<br/>
+                感想：
+                气象设备及状态原始数据来自气象局其它平台，后端服务器通过Web Service以csv＋zip形式缓存，异步进行后续处理，其实用ftp会更好些，耦合更低，容错强。
+              </span>
             </li>
             <li>
               <span class="title">气象局某部门文档管理系统（参与）</span>
               <span class="keywords">Spring ACL, Lucene, Oracle</span>
-              <span class="desc">实现文档访问控制和全文检索</span>
+              <span class="desc">
+                负责文档访问控制和全文检索，其它模块也有参与，项目实现了对部门内外的合同文本、技术论文、ppt等office文档进行类似Windows Explorer方式管理并提供文档的检索和在线预览，
+                基于Spring ACL实现了用户对目录和文件的增删改查操作，使用Open Office提取文档中文本并使用Lucene实现文档的全文检索。
+              </span>
             </li>
             <li>
               <span class="title">中海油内部业务系统(参与)</span>
               <span class="keywords">SpringMVC, jquery-ui, Oracle</span>
-              <span class="desc">项目基于Alfresco，实现了业务单据填报模块</span>
+              <span class="desc">
+                负责业务单据填报模块，项目基于Alfresco进行二次开发，核心是内容管理，实现了对中海油各业务部门的审批报销会议日程等工作流、文档检索和在线预览等。功能较丰富。<br>
+                感想：
+                由于业务单据较多，一一实现费时费力，因此后来尝试动态表单，即允许用户配置表单的内容和UI，动态为用户生成页面并实现数据的CURD，虽然由于时间关系最终未执行，
+                但在上司的指导下对面向对象和高内聚低耦合等思想有了较深入的理解，另一方面在使用工具的同时也尝试理解、改进、创造工具。
+              </span>
             </li>
           </ul>
         </div>
@@ -203,7 +227,10 @@ li > .title {
             <li>
               <span class="title">美容美发连锁管理系统（参与）</span>
               <span class="keywords">Spring MVC, Hibernate, Flex, SQL Server</span>
-              <span class="desc">参与大部分模块的前后端实现与维护，包括诸如人事、库存、绩效、收银、报表等</span>
+              <span class="desc">
+                参与大部分模块的前后端实现与维护，项目面向美容美发行业，实现了诸如人事、库存、绩效、收银、报表等诸多功能。
+                感想：这是我的一份工作，从小白到成为项目的中坚力量，既有成长又有不足，养成了看源码看文档的习惯，日后受益匪浅。
+              </span>
             </li>
           </ul>
         </div>
