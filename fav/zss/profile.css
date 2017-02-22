@@ -1,0 +1,89 @@
+.container {
+	margin: 25px auto;
+	width: 800px;
+	height: auto;
+	border: 1px solid #eee;
+}
+
+.basic {
+	width: 100%;
+}
+
+.basic-info {
+	float: left;
+}
+
+.basic-info > span {
+	display: block;
+	line-height: 1.8em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.avatar {
+	float: right;
+}
+
+.avatar > img {
+	border: 1px solid #aaa;
+	height: 200px;
+    width: auto;
+}
+
+.row {
+	padding-top: 15px;
+	width: 100%;
+	height: auto;
+	clear: both;
+}
+
+.row > .title {
+	margin-bottom: 15px;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	border-bottom: 3px solid #aaa;
+}
+
+.row > .content {
+	width: 100%;
+}
+
+.block {
+	width: 100%;
+	padding: 5px 0 5px 5px;
+}
+
+.block > .time {
+	width: 200px;
+	float: left;
+}
+
+.content-block {
+	margin-left: 200px;
+	width: 600px;
+}
+
+.content-block > span {
+	width: 32%;
+	// text-align: left;
+	display: inline-block;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.npl {
+	padding-left: 0;
+}
+
+.intent2 {
+	text-indent: 2em;
+}
+
