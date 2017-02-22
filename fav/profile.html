@@ -15,7 +15,7 @@
 
 .header {
   width: 100%;
-  height:102px;
+  height: 122px;
   border-bottom: 1px solid #aaa;
 }
 
@@ -27,8 +27,7 @@
 .header > .basic-info-block {
   float: left;
   width: 550px;
-  height: 100px;
-  padding-top: 20px;
+  height: 120px;
 }
 
 .header > .basic-info-block > .cell {
@@ -37,6 +36,7 @@
   line-height: 23px;
   text-align: left;
   padding-left: 40px;
+  font-size: 12px;
 }
 
 .left-section {
@@ -124,27 +124,40 @@ li > .title {
 <body>
   <div class="content">
     <div class="header">
-      <div class="name-block left-section" style="border: none;">
+      <div class="name-block left-section" style="border: none; height: 122px;">
         <h2>马连博</h2>
         <h4>Java Web 开发</h4>
       </div>
       <div class="basic-info-block">
         <span class="cell">(+86)152 5887 3861</span>
         <span class="cell">malianbo@163.com</span>
+        <hr style="width: 98%;border: 1px solid #eee;">
         <span class="cell">籍贯：河南</span>
         <span class="cell">年龄：26岁</span>
-        <span class="cell" style="width: 100%; padding-top: 5px;">个人主页:&nbsp; <a href="https://gniria.github.io" target="_blank">https://gniria.github.io</a></span>
+        <span class="cell">通讯地址：杭州市滨江区浦沿街道浙新小区</span>
+        <span class="cell">期望工作地点：杭州</span>
+        <span class="cell">工作年限：4年（2012.02 - 2016.05）</span>
+        <span class="cell">学历：高中（2009.06）</span>
+        <span class="cell" style="width: 100%;">个人主页:&nbsp; <a href="https://gniria.github.io" target="_blank">https://gniria.github.io</a></span>
       </div>
     </div>
 
-    <div class="edu">
+    <div class="edu" style="margin-top: 10px;">
       <div class="left-section">
         <span class="left-span section-title">教育经历</span>
-        <span class="left-span date-span" style="margin-top: 5px;">2010.07 - 2012.02</span>
+        <span class="left-span date-span" style="margin-top: 5px; height: 44px;">2010.07 - 2012.02</span>
+        <span class="left-span date-span" style="height: 76px;">2006.09 - 2009.06</span>
       </div>
       <div class="right-section">
-        <div style="text-align: left; padding-left: 20px; padding-top: 29px;">
-        北京，青鸟计算机培训，Java Web方向
+        <div class="exp-row" style="text-align: left; padding-left: 20px; padding-top: 29px;">
+        青鸟计算机培训中心<span class="desc" style="text-indent: 20px;">北京，Java Web开发</span>
+        </div>
+        <div class="exp-row">
+          河南省漯河高中
+          <span class="desc" style="text-indent: 20px;">
+            高中时成绩不错，也能称得上学霸，考个重点没问题。由于深受南方周末“荼毒”，忧国忧民忧自己，
+            担心大学的条条框框和不良现象影响到自己。
+            高三上学年会考结束后放弃学业，后仍参加高考，过一本线，被云南农业大学（二本）录取，没去。</span>
         </div>
       </div>
     </div>
@@ -203,7 +216,7 @@ li > .title {
             </li>
             <li>
               <span class="title">气象局某部门文档管理系统（参与）</span>
-              <span class="keywords">Spring ACL, Lucene, Oracle</span>
+              <span class="keywords">Spring ACL, Lucene, Oracle, Extjs</span>
               <span class="desc">
                 负责文档访问控制和全文检索，其它模块也有参与，项目实现了对部门内外的合同文本、技术论文、ppt等office文档进行类似Windows Explorer方式管理并提供文档的检索和在线预览，
                 基于Spring ACL实现了用户对目录和文件的增删改查操作，使用Open Office提取文档中文本并使用Lucene实现文档的全文检索。
@@ -211,7 +224,7 @@ li > .title {
             </li>
             <li>
               <span class="title">中海油内部业务系统(参与)</span>
-              <span class="keywords">SpringMVC, jquery-ui, Oracle</span>
+              <span class="keywords">SpringMVC, Oracle, jquery-ui</span>
               <span class="desc">
                 负责业务单据填报模块，项目基于Alfresco进行二次开发，核心是内容管理，实现了对中海油各业务部门的审批报销会议日程等工作流、文档检索和在线预览等。功能较丰富。<br>
                 感想：

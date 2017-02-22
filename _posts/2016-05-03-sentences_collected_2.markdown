@@ -2,10 +2,9 @@
 layout: post
 title:  "集句(二)"
 date:   2016-05-03 15:22:24 +0800
-categories: reading-notes
+tags: [notes]
 ---
-集句(二)
------
+
 觉得不错、有意思、有道理、有xx、有yy、有zz的句子......
 
 + 2014-07-18 09:17

@@ -3,12 +3,21 @@ layout: default
 ---
 <article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+  <!-- <header class="post-header">
+    <h2 class="post-title">{{ page.title }}</h2>
+  </header> -->
 
   <div class="post-content">
     {{ content }}
   </div>
+  {% unless page.hide_meta %}
+  <footer>
+   <ul class="tag-list">
+     {% for tag in page.tags %}
+      <li class="tag-item"><a href="/tags/{{tag}}" rel="tag">{{tag}}</a></li>
+      {% endfor %}
+    </ul>
+  </footer>
+  {% endunless %}
 
 </article>

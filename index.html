@@ -4,11 +4,19 @@ layout: default
 
 <div class="home">
 
-  暂无内容，即将重新向到github主页: <a href="https://github.com/gniria/">https://github.com/gniria/</a>
+  <!-- <h1 class="page-heading">Posts</h1> -->
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li style="border-bottom: 1px dashed #eee;">
+        <h4 style="display: inline-table; margin-bottom: 0;">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h4>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
-<script>
-setTimeout(function(){
-  location.href = 'https://github.com/gniria/';
-}, 1000);
-</script>

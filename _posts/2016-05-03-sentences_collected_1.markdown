@@ -2,10 +2,9 @@
 layout: post
 title:  "集句(一)"
 date:   2016-05-03 15:22:24 +0800
-categories: reading-notes
+tags: [notes]
 ---
-集句(一)
------
+
 觉得不错、有意思、有道理、有xx、有yy、有zz的句子......
 
 -
@@ -216,7 +215,7 @@ categories: reading-notes
 + 2014-09-24
 
 > 《传奇》
-  
+
 >> 只因为在人群中多看了你一眼
 
 >> 再也没能忘掉你的容颜

@@ -9,7 +9,7 @@
 title: 马若智
 email: malianbo@163.com
 description: > # this means to ignore newlines until "baseurl:"
-  奔向一流的三流程序员。
+  不只是程序员。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gniria.github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
@@ -17,3 +17,13 @@ github_username:  gniria
 
 # Build settings
 markdown: kramdown
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+
+tags:
+- notes
+- coding
+- tomcat
+- source
